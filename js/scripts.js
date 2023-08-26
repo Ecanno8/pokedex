@@ -1,4 +1,20 @@
-alert('Hello world');
+var pokedex = [
+    {
+        name: 'Charizard',
+        types: ['Fire'],
+        pokeNum: 9
+    },
+    {
+        name: 'Blastoise',
+        types: ['Water'],
+        pokeNum: 6
+    }
+    {
+        name: 'Venasaur',
+        types: ['Grass'],
+        pokeNum: 3
+    }
+];
+console.log(pokedex);
 
-let favFood = 'pizza';
-document.write(favFood);
+document.write(pokedex);
