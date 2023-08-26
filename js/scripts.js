@@ -1,4 +1,4 @@
-var pokedex = [
+const pokedex = [
     {
         name: 'Charizard',
         types: ['Fire'],
@@ -16,3 +16,5 @@ var pokedex = [
     }
 ];
 console.log(pokedex);
+
+document.write(pokedex);
