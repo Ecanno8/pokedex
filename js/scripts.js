@@ -16,5 +16,3 @@ var pokedex = [
     }
 ];
 console.log(pokedex);
-
-document.write(pokedex);
