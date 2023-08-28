@@ -26,10 +26,11 @@ let pokemonlist = [
     }
 ];
 
+
 for (let i = 0; i < pokemonlist.length; i++) {
     if (pokemonlist[i].height < 2.5 && pokemonlist[i].height > 1.5) {
         document.write(pokemonlist[i].name + " Wow that's big!");
-    } else if (person[i].height < .5) {
+    } else if (pokemonlist[i].height < .5) {
         document.write(pokemonlist[i].name + " It's so cute!");
     } else {
         document.write(pokemonlist[i].name + " Congratulations!");
