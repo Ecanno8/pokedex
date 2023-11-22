@@ -18,9 +18,7 @@ let pokemonRepository = (function () {
         modalBody.append(myImage);
         modalBody.append(titleElement);
         modalBody.append(contentElement);
-        $("#exampleModal").click(function () {
-            $(button).toggle("modal");
-        });
+        $(".modal-container").show();
     }
 
     function addListItem(pokemon) {
@@ -86,6 +84,11 @@ let pokemonRepository = (function () {
         });
     }
 
+    $(".btn-close").on("click", function () {
+        $(".modal-container").hide();
+
+    })
+
     return {
         getAll: function () {
             return pokemonList;
@@ -96,6 +99,7 @@ let pokemonRepository = (function () {
         loadDetails: loadDetails,
     };
 })();
+
 
 pokemonRepository.loadList().then(function () {
     pokemonRepository.getAll().forEach(function (pokemon) {
