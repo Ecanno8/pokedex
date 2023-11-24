@@ -1,6 +1,12 @@
+html {
+    background-color: aqua;
+}
+
+
 body {
     text-align: left;
     padding: 20pt;
+    color: aqua;
 }
 
 .button-class {
@@ -63,7 +69,7 @@ ul {
     width: 100%;
     max-width: 400px;
     text-align: left;
-    background-color: #c6e3f7;
+    background-color: #45518b;
     position: absolute;
     inset: 20px;
 }

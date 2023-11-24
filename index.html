@@ -15,7 +15,7 @@
         <nav class="navbar navbar-light bg-light justify-content-between">
             <a class="navbar-brand">Navbar</a>
             <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                <input class="form-control mr-sm-2" type="search" plaholder="Search" aria-label="Search" />
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                     Search
                 </button>
@@ -23,6 +23,30 @@
         </nav>
     </header>
 
+    <style>
+        .modal-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* additional styles for the modal */
+        }
+
+        .modal-container {
+            width: 500px;
+            height: 400px;
+            background-color: #306930;
+            border: 1px solid #ffffff;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 0px 10px #000000;
+            border-radius: 10px;
+            z-index: 1000;
+        }
+    </style>
     <h1>pokedex</h1>
     <ul class="pokemon-list"></ul>
     <!--
