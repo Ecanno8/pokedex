@@ -89,6 +89,12 @@ let pokemonRepository = (function () {
 
     })
 
+    //creating search function//
+    //let searchItem = document.getElementsById('search')
+    //let search_btn = document.getElementById('search-btn')
+
+
+
     return {
         getAll: function () {
             return pokemonList;
