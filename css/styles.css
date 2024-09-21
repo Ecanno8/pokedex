@@ -2,44 +2,51 @@ html {
     background-color: aqua;
 }
 
-
 body {
     text-align: left;
     padding: 20pt;
-    color: aqua;
+    color: #333;
+    /* Changed to a darker color for better contrast */
 }
 
 .button-class {
-    background-color: #4caf50;
+    background-color: white;
+    /* Moved to the top for clarity */
+    color: black;
+    border: 2px solid #4caf50;
     /* Green */
-    border: none;
-    color: white;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    -webkit-transitioon-duation: .04s;
-    /* safari*/
-    transition-duration: 0.4s;
     cursor: pointer;
-    background-color: white;
-    color: black;
-    border: 2px solid #4caf50;
+    transition-duration: 0.4s;
+    /* Fixed typo: -webkit-transitioon-duation: .04s; */
+}
+
+/* Add hover effect */
+.button-class:hover {
+    background-color: #4caf50;
+    /* Change background on hover */
+    color: white;
+    /* Change text color on hover */
 }
 
 ul {
     list-style-type: none;
     text-align: center;
+    padding: 0;
+    /* Added padding reset */
 }
 
 .modal-container {
     display: none;
+    /* Initially hidden */
 }
 
 .modal-container.is-visible {
-
     position: fixed;
     padding: 20px;
     box-sizing: border-box;
@@ -48,14 +55,11 @@ ul {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.404);
-
-    /* to show it above other content */
+    /* Dark semi-transparent background */
     z-index: 999;
-
-    /* to allow scrolling if the screen is not high enough*/
+    /* On top of other content */
     overflow: auto;
-
-    /* this is used to center the modal */
+    /* Allow scrolling if content overflows */
     display: grid;
     text-align: center;
 }
@@ -64,23 +68,24 @@ ul {
     margin: auto;
     display: inline-block;
     box-sizing: border-box;
-    background: #fff;
+    background-color: #45518b;
+    /* Use consistent background color */
     padding: 15px;
     width: 100%;
     max-width: 400px;
     text-align: left;
-    background-color: #45518b;
-    position: absolute;
-    inset: 20px;
+    position: relative;
+    /* Changed to relative for better alignment */
 }
 
 .modal-close {
     float: right;
-    -webkit-appearance: none;
     border: 0;
     background: none;
     color: #777;
     text-decoration: underline;
+    cursor: pointer;
+    /* Change cursor for better UX */
 }
 
 .modal h1 {
